@@ -1,7 +1,7 @@
 export const environment = {
-  production: true,
+  production: false,
   hostURL: 'http://localhost:',
-  port: 8084,
+  port: 8082,
   addapi:'/api',
-  envName: 'prod'
+  envName: 'dev'
 };

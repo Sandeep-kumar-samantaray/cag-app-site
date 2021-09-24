@@ -1,0 +1,22 @@
+#dashId{
+    /* position: fixed; */
+}
+
+#dashMain{
+    /* height: 50px; */
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+#tableData{
+    /* position: sticky; */
+}
+button{
+    /* margin-left:200px ; */
+}
+
+
+td{
+    padding: 10px;
+    border: 2px solid slategrey;
+}

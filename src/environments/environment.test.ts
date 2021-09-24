@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   hostURL: 'http://localhost:',
   port: 8081,
-  addapi:'/api'
+  addapi:'/api',
+  envName: 'test'
 };
 
 /*

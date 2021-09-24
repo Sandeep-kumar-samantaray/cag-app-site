@@ -1,0 +1,100 @@
+<div id="dashId">
+    <table id="dashMain">
+        <tr>
+            <td>
+                <div>
+                    <h5>* Welcome to SpringBoot And Angular Web project *</h5>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <!-- <button type="submit" class="btn btn-success">Get All Data</button>
+                     -->
+                     <input type="text" value="Enter Serach iteam">
+                     <button type="submit" class="btn btn-success" >Search</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <button type="submit" class="btn btn-danger" (click)="getCardinal()">About Cardinal</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <button type="submit" class="btn btn-success" (click)="getDetails()">Get All Data</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <button type="submit" class="btn btn-success" (click)="getEmployee()">Get Employee Data</button>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <button type="submit" class="btn btn-danger" (click)="logoutClick()">logOut</button>
+                </div>
+            </td>
+            <td>
+                <button type="cpw change" class="btn btn-success" (click)="changePWclick()">changePW</button>
+                <!-- <a [routerLink] = "['passwordchange']">pw change</a> -->
+            </td>
+        </tr>
+    </table>
+
+    <!-- <div>
+        <ag-grid-angular style="width: 500px; height: 500px;" 
+        class="ag-theme-balham" 
+        [rowData]="rowData"
+        [columnDefs]="columnDefs">
+        </ag-grid-angular>
+    </div> -->
+    <div class="container">
+        <div *ngIf="divOne">
+            <table class="table" id="tableData">
+                <thead class="thead-dark">
+                    <tr>
+                        <td>ID</td>
+                        <td>UserName</td>
+                        <td>Password</td>
+                        <td>Role</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let users of rowData">
+                        <td>{{ users.id }}</td>
+                        <td>{{ users.username }}</td>
+                        <td>{{ users.password }}</td>
+                        <td>{{ users.role }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div *ngIf="divTwo">
+            <table class="table" id="tableData">
+                <thead class="thead-dark">
+                    <tr> 
+                        <td>ID</td>
+                        <td>Employee Name</td>
+                        <td>Employee Mail</td>
+                        <td>Employee Phone</td>
+                        <td>Employee Address</td>
+                        <td>Employee salary</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of rowData">
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.empName }}</td>
+                        <td>{{ user.empMail }}</td>
+                        <td>{{ user.empPhone }}</td>
+                        <td>{{ user.empAddress }}</td>
+                        <td>{{ user.empSalary }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+</div>

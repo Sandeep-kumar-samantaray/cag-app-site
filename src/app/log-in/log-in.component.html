@@ -1,0 +1,135 @@
+<!-- <p>log-in works!</p> -->
+
+<div id="login">
+  <div class="signup-form" style="position:absolute; left:50px; margin-top: 1%;">
+    <img [src]="'assets/image/logo.png'" alt="image" height="600px" width="700px">
+  </div>
+  <div class="signup-form" style="position:absolute; right:200px; margin-top: 10%;">
+    <form action="/examples/actions/confirmation.php" method="post">
+      <h2>Sign Up</h2>
+      <!-- <p>Please fill in this form to create an account!</p> -->
+      <hr>
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <span class="fa fa-user"></span>
+            </span>
+          </div>
+          <input type="text" class="form-control" name="username" placeholder="Username" [(ngModel)]="bean.username"
+            required="required">
+        </div>
+      </div>
+      <!-- <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text">
+                          <i class="fa fa-paper-plane"></i>
+                      </span>                    
+                  </div>
+                  <input type="email" class="form-control" name="email" placeholder="Email Address" [(ngModel)]="newuser.userEmail" required="required">
+              </div>
+          </div> -->
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fa fa-lock"></i>
+            </span>
+          </div>
+          <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="bean.password"
+            required="required">
+        </div>
+      </div>
+      <!-- <div class="form-group">
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text">
+                          <i class="fa fa-lock"></i>
+                          <i class="fa fa-check"></i>
+                      </span>                    
+                  </div>
+                  <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" [(ngModel)]="newuser.userCnfPassword" required="required">
+              </div>
+          </div> -->
+      <!-- <div class="form-group">
+              <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+          </div> -->
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg" (click)="submitClick()">Sign Up</button>
+      </div>
+    </form>
+    <!-- <div class="text-center">Already have an account? <a href="#">Login here</a></div> -->
+    <div>
+      <loading-indicator [isLoading]="isLoading"></loading-indicator>
+    </div>
+  </div>
+</div>
+<!-- <div class="container">
+  <h2>Log In here</h2>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email"  name="email"
+      [(ngModel)]="bean.username">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" 
+      [(ngModel)]="bean.password" name="password">
+    </div>
+
+    <div class="form-group">
+      <div>
+        <label>Select Role</label>
+        <select [(ngModel)]="bean.role" class="form-control" name="role"> -->
+<!-- <option [ngValue]="null" disabled>Select RoleTag</option> -->
+<!--<option *ngFor="let role of roleTag" [ngValue]="role.text">{{ role.text }}</option>
+        </select>
+      </div>
+    </div> 
+    <button type="submit" class="btn btn-success" (click)="submitClick()">Submit</button>-->
+<!-- <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div> -->
+<!-- <div>
+      <a [routerLink]="['passwordchange']">forgot password ??</a>
+    </div>
+    <div>
+      <a [routerLink]="['newuser']">Create Account/Register</a>
+    </div>
+  </form>
+  <div>
+    <loading-indicator [isLoading]="isLoading"></loading-indicator>
+  </div>
+</div> -->
+<!-- <div>
+    <div>
+        <div>
+            <div>
+                UserName : 
+                <input type="text" name="username" [(ngModel)]="bean.username">
+            </div>
+            <div>
+                Password :
+                <input type="password" name="password" [(ngModel)]="bean.password" >
+            </div>
+            <div>
+                <div>
+                    <select [(ngModel)]="bean.role">
+                    <option [ngValue]="null" disabled >Select RoleTag</option> 
+                    <option *ngFor="let role of roleTag" [ngValue]="role.text">{{ role.text }}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+               <a routerLink="#" > forgot Password </a>
+            </div>
+            <div>
+                <input type="button" value="Submit" (click)="submitClick()">
+                <input type="button" value="reset" (click)="resetClick()">
+            </div>
+
+        </div>
+    </div>
+</div> -->
